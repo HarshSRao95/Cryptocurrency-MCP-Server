@@ -148,23 +148,19 @@ Latest close: $43,256.78
 ```
 mcp-crypto-server/                    ← Main project folder
 │
-├── 📄 mcp_crypto_server.py           ← Main server code (CORE FILE)
-├── 📄 test_mcp_crypto_server.py      ← Test suite (70+ tests)
+├── 📄 mainserver.py           ← Main server code (CORE FILE)
+├── 📄 testsuite.py      ← Test suite (70+ tests)
 ├── 📄 examples.py                     ← 10 usage examples
 ├── 📄 setup.py                        ← Package configuration
 ├── 📄 requirements.txt                ← Dependencies list
 │
 ├── 📄 README.md                       ← Main documentation
-├── 📄 CONTRIBUTING.md                 ← How to contribute
 ├── 📄 LICENSE                         ← MIT License
 │
 ├── 📄 Dockerfile                      ← Docker container setup
 ├── 📄 .gitignore                      ← Git ignore rules
 ├── 📄 .env.example                    ← Environment template
 ├── 📄 .env                            ← Your config (create this)
-│
-├── 🔧 quick_start.sh                  ← Linux/Mac setup script
-├── 🔧 quick_start.bat                 ← Windows setup script
 │
 ├── 📁 venv/                           ← Virtual environment (created)
 │   ├── bin/                          ← Scripts (activate, python, pip)
@@ -174,10 +170,6 @@ mcp-crypto-server/                    ← Main project folder
 ├── 📁 .github/                        ← GitHub configuration
 │   └── workflows/
 │       └── ci.yml                    ← CI/CD pipeline
-│
-├── 📁 docs/                           ← Additional docs (optional)
-│   ├── API.md
-│   └── EXAMPLES.md
 │
 ├── 📁 tests/                          ← Alternative test location
 │   └── __init__.py
