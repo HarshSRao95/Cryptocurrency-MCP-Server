@@ -146,7 +146,7 @@ Latest close: $43,256.78
 
 ## 📁 Directory Structure
 ```
-mcp-crypto-server/                    ← Main project folder
+mcpserver/                    ← Main project folder
 │
 ├── 📄 mainserver.py           ← Main server code (CORE FILE)
 ├── 📄 testsuite.py      ← Test suite (70+ tests)
