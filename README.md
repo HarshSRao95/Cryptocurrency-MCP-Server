@@ -63,7 +63,7 @@ Overall Coverage: 90%
 - **pip** package manager
 - **Git** (optional, for cloning)
 
-### Quick Run Guide
+## Quick Run Guide
 
 ### 1. Clone the repository
 ```
@@ -145,6 +145,7 @@ Latest close: $43,256.78
 ---
 
 ## 📁 Directory Structure
+```
 mcp-crypto-server/                    ← Main project folder
 │
 ├── 📄 mcp_crypto_server.py           ← Main server code (CORE FILE)
@@ -183,6 +184,7 @@ mcp-crypto-server/                    ← Main project folder
 │
 └── 📁 htmlcov/                        ← Coverage reports (generated)
     └── index.html
+```
 
 ---
 
