@@ -63,30 +63,67 @@ Overall Coverage: 90%
 - **pip** package manager
 - **Git** (optional, for cloning)
 
-### Quick Start
+### Quick Run Guide
 
-```bash
-# Clone the repository
+### 1. Clone the repository
+```
 git clone https://github.com/HarshSRao95/Cryptocurrency-MCP-Server.git
 cd mcpserver
+```
 
-# Create virtual environment
+### 2. Create virtual environment
+```
 python -m venv venv
+```
 
-# Activate virtual environment
-# Windows:
-venv\Scripts\activate
-# Linux/Mac:
-source venv/bin/activate
+### 3. Activate Virtual Environment
+```
+source venv/bin/activate          # Mac/Linux
+venv\Scripts\activate             # Windows
+```
 
-# Install dependencies
+### 4. Install Dependencies
+```
 pip install -r requirements.txt
+```
 
-# Run the server
+### 5. Run Tests
+```
+pytest testsuite.py -v
+pytest testsuite.py --cov   # with coverage
+```
+
+### 6. Run Main Application Server (MCP)
+```
 python mainserver.py
 ```
 
-### Expected Output
+### 7. Run Examples
+```
+python examples.py        # All examples
+python my_script.py       # Your custom script
+```
+
+### 8. (Optional) Check Code Quality
+```
+black --check *.py                # Format check
+flake8 *.py                       # Lint check
+```
+
+### 9. Generate Test Coverage Report
+```
+pytest --cov --cov-report=html
+```
+
+### 10. Deactivate virtual environment
+```
+deactivate
+```
+
+---
+
+
+### Expected Output of Step 6 - Run Main Application Server (MCP)
 
 ```
 2025-11-15 20:35:21,226 - __main__ - INFO - Initialized binance exchange
@@ -146,49 +183,6 @@ mcp-crypto-server/                    ← Main project folder
 │
 └── 📁 htmlcov/                        ← Coverage reports (generated)
     └── index.html
-
----
-
-## Quick Run Guide
-
-### 1. Activate Virtual Environment
-```
-source venv/bin/activate          # Mac/Linux
-venv\Scripts\activate             # Windows
-```
-
-### 2. Install Dependencies
-```
-pip install -r requirements.txt
-```
-
-### 3. Run Tests
-```
-pytest testsuite.py -v
-pytest testsuite.py --cov   # with coverage
-```
-
-### 4. Run Main Application Server (MCP)
-```
-python mainserver.py
-```
-
-### 5. Run Examples
-```
-python examples.py        # All examples
-python my_script.py       # Your custom script
-```
-
-### 6. (Optional) Check Code Quality
-```
-black --check *.py                # Format check
-flake8 *.py                       # Lint check
-```
-
-### 7. Deactivate virtual environment
-```
-deactivate
-```
 
 ---
 
